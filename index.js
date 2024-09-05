@@ -5,8 +5,9 @@ const app = express();
 const PORT = 3000;
 app.use(express.json())
 
-app.set('view engine', 'ejs')
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(process.cwd(), 'views'));
+app.set('view engine', 'ejs');
+
 
 app.get('/video', (req, res) => {
     const postName = req.query.name.trim();
