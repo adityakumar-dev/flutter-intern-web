@@ -44,4 +44,4 @@ const TextPost = [
 
 ]
 
-export { videoUrls, imageUrls, TextPost }
+module.exports = { videoUrls, imageUrls, TextPost };
