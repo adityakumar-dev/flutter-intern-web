@@ -1,5 +1,7 @@
-import express from 'express';
-import { videoUrls, imageUrls, TextPost } from './data.js';
+const express = require('express');
+const path = require('path');  // Make sure to include 'path' as you're using it
+const { videoUrls, imageUrls, TextPost } = require('./data.js');
+
 
 const app = express();
 const PORT = 3000;
