@@ -4,8 +4,9 @@ import { videoUrls, imageUrls, TextPost } from './data.js';
 const app = express();
 const PORT = 3000;
 app.use(express.json())
-// app.use(helmet())
+
 app.set('view engine', 'ejs')
+
 app.get('/video', (req, res) => {
     const postName = req.query.name.trim();
     const videoPost = videoUrls.find(post => post.name.trim() === postName);
